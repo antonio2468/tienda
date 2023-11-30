@@ -5,13 +5,11 @@ class Database{
     private $username = "root";
     private $password = "";
     private $charset = "utf8";
-    private $port = 3306;
-
 
     function conectar()
     {  //$conexion = "mysql:host=" . $this->hostname .";port=" . $this->port . "; dbname=" . $this->database . ";
         try{
-        $conexion = "mysql:host=" . $this->hostname .";password=" . $this->password . "port=" . $this->port . " dbname=" . $this->database . ";
+        $conexion = "mysql:host=" . $this->hostname ."; dbname=" . $this->database . ";
         charset=" . $this->charset;
         $options = [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

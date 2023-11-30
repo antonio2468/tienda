@@ -112,8 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['generar'])) {
 
 
 	<div class="center">
-
-          <button id="generarMensaje">Generar Mensaje Aleatorio</button>
+    <button id="generarMensaje">Generar Mensaje Aleatorio</button>
     <div id="mensajeAleatorio"></div>
 
     <script>
@@ -125,8 +124,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['generar'])) {
                 });
         });
     </script>
-
-
 </div>
 
 
